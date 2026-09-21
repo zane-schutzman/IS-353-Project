@@ -3,16 +3,16 @@ IS355 Networking and Cyber Security
 Group Members
 
 Student: [Zane Schutzman]
-
+Student ID: 
 
 Student: [Student 2 Name]
-
+Student ID: 
 
 Student: [Student 3 Name]
-
+Student ID: 
 
 Student: [Student 4 Name]
-
+Student ID: 
 
 
 Communication Plan
