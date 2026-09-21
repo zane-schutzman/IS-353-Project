@@ -14,9 +14,6 @@ Student: [Student 3 Name]
 Student: [Student 4 Name]
 
 
-GitHub Repository
-
-Repository: [Insert GitHub Repository Link]
 
 Communication Plan
 
