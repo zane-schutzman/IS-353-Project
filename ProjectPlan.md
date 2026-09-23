@@ -1,12 +1,12 @@
-IS355 Networking and Cyber Security
+# IS355 Networking and Cyber Security
 
-Group Members
+## Group Members
 
 Student: [Zane Schutzman]
 Student ID: 
 
-Student: [Student 2 Name]
-Student ID: 
+Student: [Owen Steinetz]
+Student ID: 1928302
 
 Student: [Student 3 Name]
 Student ID: 
@@ -15,15 +15,15 @@ Student: [Student 4 Name]
 Student ID: 
 
 
-Communication Plan
+## Communication Plan
 
-We will use a group chat to communicate throughout the project.
+We will use an iMessage group chat, which we have already created, to communicate throughout the project.
 
 We will communicate every week to discuss what we have completed, what still needs to be done, and what we will work on next.
 
 We will aim to complete one or two tasks each week.
 
-Tasks
+## Tasks
 
 Form project group and create GitHub repository — [Name]
 
@@ -55,17 +55,30 @@ Complete final report — [Name]
 
 Prepare final submission — [Name]
 
-Project Timeline
+## Project Timeline
 
-Week 4 — Form group, create GitHub repository, and create project plan
+### Week 4
+- form group
+- create GitHub repository
+- create project plan
 
-Week 5 — Assumptions, requirements, and begin network design
+### Week 5
+- assumptions
+- requirements
+- begin network design
 
-Week 6 — Network design and IP addressing
+### Week 6
+- network design
+- IP addressing
 
-Week 7 — Network diagram and hardware recommendations
+### Week 7
+- network diagram
+- hardware recommendations
 
-Week 8 — Upload draft network design to GitHub
+### Week 8
+- upload draft network design to GitHub
 
-Week 9 — Cloud provider research and pricing
+### Week 9
+- cloud provider research
+- pricing
 
