@@ -2,18 +2,12 @@
 
 ## Group Members
 
-Student: [Zane Schutzman]
-Student ID: 
-
-Student: [Owen Steinetz]
-Student ID: 1928302
-
-Student: [Student 3 Name]
-Student ID: 
-
-Student: [Student 4 Name]
-Student ID: 
-
+| Student Name | Student ID | Student Email
+|---|---:|---:|
+| Zane Schutzman | enterHere | zwschutzman@loyola.edu |
+| Owen Steinetz | 1928302 | omsteinetz@loyola.edu |
+| Gbemiro Omokayode | enterHere | gdomokayode@loyola.edu |
+| Charlie DiNapoli | enterHere | cjdinapoli@loyola.edu |
 
 ## Communication Plan
 
