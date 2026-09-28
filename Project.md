@@ -133,6 +133,23 @@ The network will be divided into six separate `/24` subnets. Network segmentatio
 | Servers            | 85.50.0.0/24     | Local company servers                                    |
 | Network Management | 85.60.0.0/24     | Management of network equipment                          |
 
+### Device IP Addresses
+
+| Device | IP Address | Network |
+|---|---|---|
+| Firewall | 85.10.0.1 | Network Gateway |
+| Core Switch | 85.60.0.1 | Management |
+| Factory Switch | 85.60.0.2 | Management |
+| Office Switch | 85.60.0.3 | Management |
+| Camera Switch | 85.60.0.4 | Management |
+| Server Switch | 85.60.0.5 | Management |
+| Factory PCs | 85.10.0.10–85.10.0.34 | Factory |
+| Office Computers | 85.20.0.10–85.20.0.49 | Office |
+| IP Cameras | 85.30.0.10–85.30.0.59 | Cameras |
+| Guest Devices | 85.40.0.10–85.40.0.99 | Guest |
+| File Server | 85.50.0.10 | Servers |
+| Camera Server | 85.50.0.11 | Servers |
+
 ### Network Design Explanation
 
 The network is divided into separate subnets for the factory, office, security cameras, guest Wi-Fi, servers, and network management. This separation allows different types of devices and users to be managed independently.
