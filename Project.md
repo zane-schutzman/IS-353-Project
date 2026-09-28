@@ -133,6 +133,45 @@ The network will be divided into six separate `/24` subnets. Network segmentatio
 | Servers            | 85.50.0.0/24     | Local company servers                                    |
 | Network Management | 85.60.0.0/24     | Management of network equipment                          |
 
+### IP Addressing Plan
+
+All internal networks use a /24 subnet mask (255.255.255.0). The first octet of the IP addresses is 85, which corresponds to the last two digits of a group member's student ID.
+
+| Device / Device Group | IP Address / Range | Network | Purpose |
+|---|---|---|---|
+| Factory Gateway | 85.10.0.1 | Factory | Default gateway for factory devices |
+| Office Gateway | 85.20.0.1 | Office | Default gateway for office devices |
+| Camera Gateway | 85.30.0.1 | Cameras | Default gateway for security cameras |
+| Guest Gateway | 85.40.0.1 | Guest Wi-Fi | Default gateway for guest devices |
+| Server Gateway | 85.50.0.1 | Servers | Default gateway for local servers |
+| Management Gateway | 85.60.0.1 | Management | Default gateway for network equipment |
+| Factory Switch | 85.60.0.2 | Management | Management address for factory switch |
+| Office Switch | 85.60.0.3 | Management | Management address for office switch |
+| Camera Switch | 85.60.0.4 | Management | Management address for camera switch |
+| Server Switch | 85.60.0.5 | Management | Management address for server switch |
+| Factory PCs | 85.10.0.10–85.10.0.34 | Factory | Factory employee computers |
+| Office Computers | 85.20.0.10–85.20.0.49 | Office | Employee computers |
+| IP Cameras | 85.30.0.10–85.30.0.59 | Cameras | Security cameras |
+| Guest Devices | 85.40.0.10–85.40.0.99 | Guest Wi-Fi | Temporary/guest devices |
+| File Server | 85.50.0.10 | Servers | Engineering and financial files |
+| Camera Server | 85.50.0.11 | Servers | Stores security camera footage |
+
+### Network Design Decisions
+
+The network is divided into separate subnets to improve organization, security, and network management. The factory, office, security cameras, guest Wi-Fi, servers, and network management equipment each have their own subnet.
+
+The factory network is separated from the office network because it contains network-controlled machinery and conveyor belts. This helps limit unnecessary traffic between factory equipment and office devices.
+
+The security camera network is separate from the other networks so that camera traffic does not interfere with normal business traffic. The cameras connect to a dedicated camera switch and send their footage to the local camera server.
+
+The guest Wi-Fi network is separated from the company's internal networks. Guest devices should not have direct access to company computers, servers, machinery, or security cameras.
+
+The server network contains the local file server and camera server. The file server stores important engineering and financial information, while the camera server stores security camera footage.
+
+A separate management network is used for managing switches and other network equipment. This keeps management traffic separate from normal user traffic.
+
+The firewall is placed between the internet and the internal network. It provides traffic filtering and helps protect the company's internal systems from unauthorized internet traffic.
+
 ### Device IP Addresses
 
 | Device | IP Address | Network |
