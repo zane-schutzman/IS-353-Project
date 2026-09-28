@@ -4,7 +4,7 @@
 
 | Student Name | Student ID | Student Email
 |---|---:|---:|
-| Zane Schutzman | enterHere | zwschutzman@loyola.edu |
+| Zane Schutzman | 1924285 | zwschutzman@loyola.edu |
 | Owen Steinetz | 1928302 | omsteinetz@loyola.edu |
 | Gbemiro Omokayode | 1904384 | gdomokayode@loyola.edu |
 | Charlie DiNapoli | 1906216 | cjdinapoli@loyola.edu |
