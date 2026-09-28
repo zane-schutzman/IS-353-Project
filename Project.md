@@ -35,7 +35,7 @@ We will aim to complete one or two tasks each week.
 | Design the network                              |     |
 | Create network diagram                          |  Zane    |
 | Develop IP addressing plan                      |      |
-| Recommend network hardware                      |      |
+| Recommend network hardware                      |  Zane    |
 | Research cloud providers                        |      |
 | Complete cloud service pricing comparison       |      |
 | Compare backup strategies                       |      |
