@@ -7,7 +7,7 @@
 | Zane Schutzman | enterHere | zwschutzman@loyola.edu |
 | Owen Steinetz | 1928302 | omsteinetz@loyola.edu |
 | Gbemiro Omokayode | enterHere | gdomokayode@loyola.edu |
-| Charlie DiNapoli | enterHere | cjdinapoli@loyola.edu |
+| Charlie DiNapoli | 1906216 | cjdinapoli@loyola.edu |
 
 ## Communication Plan
 
