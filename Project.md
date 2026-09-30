@@ -51,9 +51,9 @@ We will aim to complete one or two tasks each week.
 
 ### Week 4
 
-- [ ] Form group
-- [ ] Create GitHub repository
-- [ ] Create project plan
+- [X] Form group
+- [X] Create GitHub repository
+- [X] Create project plan
 
 ### Week 5
 
