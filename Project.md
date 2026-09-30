@@ -36,10 +36,10 @@ We will aim to complete one or two tasks each week.
 | Create network diagram                          | Zane |
 | Develop IP addressing plan                      | Zane |
 | Recommend network hardware                      | Zane |
-| Research cloud providers                        | enter |
-| Complete cloud service pricing comparison       | enter |
-| Compare backup strategies                       | enter |
-| Conduct cyber security risk assessment          | enter |
+| Research cloud providers                        | empty |
+| Complete cloud service pricing comparison       | empty |
+| Compare backup strategies                       | empty |
+| Conduct cyber security risk assessment          | empty |
 | Recommend security controls                     | Owen |
 | Review and improve network design               | Owen |
 | Complete final report                           | Owen |
