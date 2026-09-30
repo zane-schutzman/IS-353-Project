@@ -51,34 +51,34 @@ We will aim to complete one or two tasks each week.
 
 ### Week 4
 
-* Form group
-* Create GitHub repository
-* Create project plan
+- [ ] Form group
+- [ ] Create GitHub repository
+- [ ] Create project plan
 
 ### Week 5
 
-* Assumptions
-* Requirements
-* Begin network design
+- [ ] Assumptions
+- [ ] Requirements
+- [ ] Begin network design
 
 ### Week 6
 
-* Network design
-* IP addressing
+- [ ] Network design
+- [ ] IP addressing
 
 ### Week 7
 
-* Network diagram
-* Hardware recommendations
+- [ ] Network diagram
+- [ ] Hardware recommendations
 
 ### Week 8
 
-* Upload draft network design to GitHub
+- [ ] Upload draft network design to GitHub
 
 ### Week 9
 
-* Cloud provider research
-* Pricing
+- [ ] Cloud provider research
+- [ ] Pricing
 
 ---
 
