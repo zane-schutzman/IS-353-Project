@@ -29,21 +29,21 @@ We will aim to complete one or two tasks each week.
 
 | Task                                            | Name |
 | ----------------------------------------------- | ---- |
-| Form project group and create GitHub repository |  All    |
-| Create project plan and communication schedule  |  All    |
-| Identify assumptions and requirements           |  Zane    |
-| Design the network                              |   Zane  |
-| Create network diagram                          |  Zane    |
-| Develop IP addressing plan                      | Zane     |
-| Recommend network hardware                      |  Zane    |
-| Research cloud providers                        |      |
-| Complete cloud service pricing comparison       |      |
-| Compare backup strategies                       |      |
-| Conduct cyber security risk assessment          |      |
-| Recommend security controls                     |      |
-| Review and improve network design               |      |
-| Complete final report                           |      |
-| Prepare final submission                        |      |
+| Form project group and create GitHub repository | All |
+| Create project plan and communication schedule  | All |
+| Identify assumptions and requirements           | Zane |
+| Design the network                              | Zane |
+| Create network diagram                          | Zane |
+| Develop IP addressing plan                      | Zane |
+| Recommend network hardware                      | Zane |
+| Research cloud providers                        | enter |
+| Complete cloud service pricing comparison       | enter |
+| Compare backup strategies                       | enter |
+| Conduct cyber security risk assessment          | enter |
+| Recommend security controls                     | Owen |
+| Review and improve network design               | Owen |
+| Complete final report                           | Owen |
+| Prepare final submission                        | All |
 
 ---
 
