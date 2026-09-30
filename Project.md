@@ -27,23 +27,23 @@ We will aim to complete one or two tasks each week.
 
 ## Tasks
 
-| Task                                            | Name |
-| ----------------------------------------------- | ---- |
-| Form project group and create GitHub repository | All |
-| Create project plan and communication schedule  | All |
-| Identify assumptions and requirements           | Zane |
-| Design the network                              | Zane |
-| Create network diagram                          | Zane |
-| Develop IP addressing plan                      | Zane |
-| Recommend network hardware                      | Zane |
-| Research cloud providers                        | empty |
-| Complete cloud service pricing comparison       | empty |
-| Compare backup strategies                       | empty |
-| Conduct cyber security risk assessment          | empty |
-| Recommend security controls                     | Owen |
-| Review and improve network design               | Owen |
-| Complete final report                           | Owen |
-| Prepare final submission                        | All |
+| Task                                            | Name | Status |
+| ----------------------------------------------- | ---- | ---- |
+| Form project group and create GitHub repository | All | complete |
+| Create project plan and communication schedule  | All | complete |
+| Identify assumptions and requirements           | Zane | incomplete |
+| Design the network                              | Zane | incomplete |
+| Create network diagram                          | Zane | incomplete |
+| Develop IP addressing plan                      | Zane | incomplete |
+| Recommend network hardware                      | Zane | incomplete |
+| Research cloud providers                        | empty | incomplete |
+| Complete cloud service pricing comparison       | empty | incomplete |
+| Compare backup strategies                       | empty | incomplete |
+| Conduct cyber security risk assessment          | empty | incomplete |
+| Recommend security controls                     | Owen | incomplete |
+| Review and improve network design               | Owen | incomplete |
+| Complete final report                           | Owen | incomplete |
+| Prepare final submission                        | All | incomplete |
 
 ---
 
