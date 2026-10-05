@@ -212,7 +212,158 @@ Wireless access points will provide Wi-Fi throughout the factory and office whil
 
 A firewall will be placed between the internet and the internal network to provide traffic filtering and network protection. UPS devices are recommended for critical network and server equipment to reduce disruption caused by short power outages.
 
-### Cloud Provider Research
+### Research cloud providers
+
+The company will use cloud services for its public website and email, and cloud storage for offsite backups. As stated in the requirements, important engineering designs and financial information will remain on the local file server. Cloud storage will only hold encrypted backup copies of that data.
+
+| Service Needed | Providers Compared | Purpose |
+|---|---|---|
+| Email and productivity | Microsoft 365, Google Workspace | Business email, calendars, office apps, and video meetings |
+| Public website | Squarespace, Wix | Hosting the company's public website |
+| Backup storage | Backblaze B2, Amazon S3, Microsoft Azure Blob Storage, Google Cloud Storage | Offsite copy of local server backups |
+
+#### Email and Productivity
+
+| Feature | Microsoft 365 | Google Workspace |
+|---|---|---|
+| Entry plan | Business Basic | Business Starter |
+| Standard plan | Business Standard | Business Standard |
+| Email | Exchange / Outlook | Gmail |
+| Office apps | Word, Excel, PowerPoint (desktop apps on Standard and above) | Docs, Sheets, Slides (web-based) |
+| Cloud storage | 1 TB per user | 30 GB per user (Starter), 2 TB per user (Standard) |
+| Meetings | Microsoft Teams | Google Meet |
+| Security upgrade path | Business Premium adds device management and advanced threat protection | Business Plus adds Vault and additional security controls |
+
+**Recommendation: Microsoft 365.** Engineering and finance staff are likely to rely on desktop Excel and Word, and most business software is designed to work with Microsoft Office. Microsoft 365 also has a clear upgrade path to Business Premium, which adds device management and security features that support the company's security controls. Licenses can be mixed, so office staff can receive Business Standard while factory workers who only need email and web apps can receive Business Basic.
+
+#### Public Website
+
+The public website will be hosted by a managed website provider instead of on a server inside the company network. This means the firewall does not need to allow inbound internet traffic to an internal web server, which reduces the company's attack surface. The provider also handles web server updates, uptime, and SSL certificates.
+
+| Feature | Squarespace | Wix |
+|---|---|---|
+| Free plan | No (14-day trial) | Yes (with Wix branding, no custom domain) |
+| Entry paid plan | Basic | Light |
+| Hosting and SSL | Included | Included |
+| Strengths | Professional templates, simple editing | More apps and customization options |
+
+**Recommendation: Squarespace.** The company needs a professional informational website rather than an online store, and Squarespace's entry plan with a custom domain fully meets that need.
+
+#### Backup Storage
+
+| Provider | Standard Storage Price | Notes |
+|---|---|---|
+| Backblaze B2 | $6.95 per TB/month | No minimum storage time, free egress up to 3x stored data, supports Object Lock (immutable backups) |
+| Microsoft Azure Blob (Hot) | About $18 per TB/month | Integrates with Microsoft services |
+| Google Cloud Storage (Regional) | About $20 per TB/month | Integrates with Google services |
+| Amazon S3 Standard | About $23 per TB/month | Largest feature set |
+| Amazon S3 Glacier | About $1–3.60 per TB/month | Very cheap storage, but restores are slow and retrieval fees apply |
+
+**Recommendation: Backblaze B2.** It has the lowest standard storage price, works with most backup software through its S3-compatible API, and supports Object Lock, which prevents backups from being deleted or encrypted by ransomware for a set retention period. Glacier is cheaper to store but would be slow and costly to restore from during an emergency.
+
+### Complete cloud service pricing comparison
+
+#### Pricing Assumptions
+
+* Up to 65 users: 40 office staff and 25 factory workers (the maximum staff numbers in the requirements).
+* Office staff need desktop Office apps; factory workers need email and web apps only.
+* All prices are U.S. list prices on annual commitment, as of September–October 2026.
+* About 2 TB of engineering and financial files, stored as about 4 TB in the cloud once backup versions are included.
+
+#### Email and Productivity Costs
+
+| Option | Office Users (40) | Factory Users (25) | Monthly Cost | Annual Cost |
+|---|---|---|---:|---:|
+| Microsoft 365: Standard (office) + Basic (factory) | 40 × $14 | 25 × $7 | $735 | $8,820 |
+| Microsoft 365: Standard for everyone | 40 × $14 | 25 × $14 | $910 | $10,920 |
+| Google Workspace: Standard (office) + Starter (factory) | 40 × $14 | 25 × $7 | $735 | $8,820 |
+| Google Workspace: Starter for everyone | 40 × $7 | 25 × $7 | $455 | $5,460 |
+
+Microsoft 365 and Google Workspace now have the same list prices, so the decision comes down to features. The Google Workspace Starter-only option is the cheapest, but office staff would not have desktop Office apps and would only have 30 GB of storage each.
+
+#### Website Costs
+
+| Option | Monthly Cost | Annual Cost |
+|---|---:|---:|
+| Squarespace Basic | About $16–19 | About $192–228 |
+| Wix Light | $17 | $204 |
+| Wix Core | $29 | $348 |
+
+#### Backup Storage Costs (4 TB)
+
+| Provider | Monthly Cost | Annual Cost |
+|---|---:|---:|
+| Backblaze B2 | $27.80 | $333.60 |
+| Microsoft Azure Blob (Hot) | About $72 | About $864 |
+| Google Cloud Storage | About $80 | About $960 |
+| Amazon S3 Standard | About $92 | About $1,104 |
+| Amazon S3 Glacier | About $4–15 (plus retrieval fees) | About $48–173 (plus retrieval fees) |
+
+#### Recommended Cloud Services Total
+
+| Service | Recommended Option | Estimated Annual Cost |
+|---|---|---:|
+| Email and productivity | Microsoft 365 (Standard + Basic) | $8,820 |
+| Website | Squarespace Basic | About $228 |
+| Backup storage | Backblaze B2 (4 TB) | About $334 |
+| **Total** | | **About $9,382 per year** |
+
+Prices change often, so they should be confirmed with each provider before purchase.
+
+### Compare backup strategies
+
+#### Backup Types
+
+| Backup Type | How It Works | Advantages | Disadvantages |
+|---|---|---|---|
+| Full | Copies all data every time | Fastest and simplest restore | Uses the most storage and takes the longest to run |
+| Incremental | Copies only data changed since the last backup of any type | Fastest backups, uses the least storage | Slower restore; needs the last full backup plus every incremental since |
+| Differential | Copies all data changed since the last full backup | Faster restore than incremental; needs only the full backup plus the latest differential | Each differential grows larger until the next full backup |
+
+#### Backup Locations
+
+| Strategy | Advantages | Disadvantages |
+|---|---|---|
+| Local only (backup server or NAS) | Fast backups and restores, no ongoing cloud costs | Lost along with the original data in a fire, flood, theft, or ransomware attack |
+| Cloud only | Stored offsite and protected from local disasters | Large restores are slow over the internet connection; ongoing monthly costs |
+| Hybrid (local + cloud) | Fast local restores plus offsite protection | Highest cost and complexity |
+
+#### Recommended Backup Strategy
+
+The company will follow the **3-2-1 backup rule**: keep 3 copies of important data, on 2 different types of storage, with 1 copy offsite.
+
+1. **Original data** is stored on the file server (85.50.0.10), which uses RAID. RAID protects against a single drive failure but is not a backup.
+2. **Local backup:** A backup NAS on the server network (85.50.0.12) receives a full backup every weekend and an incremental backup every night. This allows quick restores of deleted or damaged files.
+3. **Offsite backup:** Each night, an encrypted copy of the backup is sent to Backblaze B2. Object Lock makes these copies unchangeable for 30 days, so ransomware or an attacker cannot delete or encrypt them.
+
+| Data | Backup Method | Frequency | Retention |
+|---|---|---|---|
+| Engineering and financial files | Local NAS + Backblaze B2 | Weekly full, nightly incremental | 30 daily, 12 monthly versions |
+| Security camera footage | Stored on camera server RAID; important clips copied to the file server | Continuous recording | 30 days of footage |
+| Switch and firewall configurations | Exported to the file server after every change | After each change | Last 10 versions |
+| Microsoft 365 email and files | Microsoft 365 retention policies (a third-party Microsoft 365 backup service is optional) | Continuous | As set by policy |
+
+Security camera footage is not fully backed up to the cloud because 24/7 video from many cameras would use too much storage and internet bandwidth. Instead, footage is kept on the camera server's RAID storage, and clips of important events are saved to the file server, where they are included in normal backups.
+
+Restores will be tested every three months to make sure the backups actually work. With nightly backups, the company would lose at most one day of file changes in a worst-case event.
+
+#### Additional Hardware and IP Address
+
+| Hardware | Quantity | Minimum Specifications | Purpose |
+|---|---:|---|---|
+| Backup NAS | 1 | Business NAS with RAID, at least 2x the file server's storage capacity, and encryption support | Stores local backups of the file server |
+
+| Device | IP Address | Network | Purpose |
+|---|---|---|---|
+| Backup NAS | 85.50.0.12 | Servers | Local backup storage |
+
+#### Sources
+
+* Microsoft 365 pricing: https://o365hq.com/blog/microsoft-365-business-basic-vs-standard-vs-premium-which-plan-for-10-50-and-200-users
+* Google Workspace pricing: https://www.flamingo.run/blog/google-workspace-pricing
+* Backblaze B2 pricing: https://www.backblaze.com/cloud-storage/pricing
+* Cloud storage comparison: https://tech-insider.org/backblaze-b2-vs-google-cloud-vs-azure-blob-2026/
+* Wix and Squarespace pricing: https://helpcompare.com/wix-vs-squarespace/
 ### Network Design Explanation
 
 The network is divided into separate subnets for the factory, office, security cameras, guest Wi-Fi, servers, and network management. This separation allows different types of devices and users to be managed independently.
