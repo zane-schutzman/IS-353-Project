@@ -57,19 +57,19 @@ We will aim to complete one or two tasks each week.
 
 ### Week 5
 
-- [ ] Assumptions
-- [ ] Requirements
-- [ ] Begin network design
+- [X] Assumptions
+- [X] Requirements
+- [X] Begin network design
 
 ### Week 6
 
-- [ ] Network design
-- [ ] IP addressing
+- [X] Network design
+- [X] IP addressing
 
 ### Week 7
 
-- [ ] Network diagram
-- [ ] Hardware recommendations
+- [X] Network diagram
+- [X] Hardware recommendations
 
 ### Week 8
 
