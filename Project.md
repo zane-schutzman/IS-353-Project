@@ -31,11 +31,11 @@ We will aim to complete one or two tasks each week.
 | ----------------------------------------------- | ---- | ---- |
 | Form project group and create GitHub repository | All | complete |
 | Create project plan and communication schedule  | All | complete |
-| Identify assumptions and requirements           | Zane | incomplete |
-| Design the network                              | Zane | incomplete |
-| Create network diagram                          | Zane | incomplete |
-| Develop IP addressing plan                      | Zane | incomplete |
-| Recommend network hardware                      | Zane | incomplete |
+| Identify assumptions and requirements           | Zane | complete |
+| Design the network                              | Zane | complete |
+| Create network diagram                          | Zane | complete |
+| Develop IP addressing plan                      | Zane | complete |
+| Recommend network hardware                      | Zane | complete |
 | Research cloud providers                        | Charlie | incomplete |
 | Complete cloud service pricing comparison       | Charlie | incomplete |
 | Compare backup strategies                       | Charlie | incomplete |
