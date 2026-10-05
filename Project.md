@@ -212,6 +212,7 @@ Wireless access points will provide Wi-Fi throughout the factory and office whil
 
 A firewall will be placed between the internet and the internal network to provide traffic filtering and network protection. UPS devices are recommended for critical network and server equipment to reduce disruption caused by short power outages.
 
+### Cloud Provider Research
 ### Network Design Explanation
 
 The network is divided into separate subnets for the factory, office, security cameras, guest Wi-Fi, servers, and network management. This separation allows different types of devices and users to be managed independently.
