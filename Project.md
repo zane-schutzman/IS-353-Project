@@ -156,7 +156,7 @@ All internal networks use a /24 subnet mask (255.255.255.0). The first octet of 
 | File Server | 85.50.0.10 | Servers | Engineering and financial files |
 | Camera Server | 85.50.0.11 | Servers | Stores security camera footage |
 
-### Network Design Decisions
+# Network Design Decisions
 
 The network is divided into separate subnets to improve organization, security, and network management. The factory, office, security cameras, guest Wi-Fi, servers, and network management equipment each have their own subnet.
 
@@ -172,7 +172,7 @@ A separate management network is used for managing switches and other network eq
 
 The firewall is placed between the internet and the internal network. It provides traffic filtering and helps protect the company's internal systems from unauthorized internet traffic.
 
-### Device IP Addresses
+# Device IP Addresses
 
 | Device | IP Address | Network |
 |---|---|---|
@@ -189,7 +189,7 @@ The firewall is placed between the internet and the internal network. It provide
 | File Server | 85.50.0.10 | Servers |
 | Camera Server | 85.50.0.11 | Servers |
 
-### Recommended Network Hardware
+# Recommended Network Hardware
 
 | Hardware | Quantity | Minimum Specifications | Purpose |
 |---|---:|---|---|
@@ -204,7 +204,7 @@ The firewall is placed between the internet and the internal network. It provide
 | Camera Server | 1 | Business-class server with high-capacity storage and RAID | Stores security camera footage |
 | UPS | 2+ | Battery backup with surge protection and sufficient capacity for network/server equipment | Keeps critical network equipment running during short power interruptions |
 
-### Hardware Recommendations
+# Hardware Recommendations
 
 The recommended hardware supports the size and requirements of the company's factory and office networks. Managed switches are used so that the different network subnets can be separated and managed. A PoE switch is recommended for the security cameras because IP cameras can receive both network connectivity and power through Ethernet.
 
@@ -212,7 +212,7 @@ Wireless access points will provide Wi-Fi throughout the factory and office whil
 
 A firewall will be placed between the internet and the internal network to provide traffic filtering and network protection. UPS devices are recommended for critical network and server equipment to reduce disruption caused by short power outages.
 
-### Research cloud providers
+# Research cloud providers
 
 The company will use cloud services for its public website and email, and cloud storage for offsite backups. As stated in the requirements, important engineering designs and financial information will remain on the local file server. Cloud storage will only hold encrypted backup copies of that data.
 
@@ -222,7 +222,7 @@ The company will use cloud services for its public website and email, and cloud 
 | Public website | Squarespace, Wix | Hosting the company's public website |
 | Backup storage | Backblaze B2, Amazon S3, Microsoft Azure Blob Storage, Google Cloud Storage | Offsite copy of local server backups |
 
-#### Email and Productivity
+# Email and Productivity
 
 | Feature | Microsoft 365 | Google Workspace |
 |---|---|---|
@@ -236,7 +236,7 @@ The company will use cloud services for its public website and email, and cloud 
 
 **Recommendation: Microsoft 365.** Engineering and finance staff are likely to rely on desktop Excel and Word, and most business software is designed to work with Microsoft Office. Microsoft 365 also has a clear upgrade path to Business Premium, which adds device management and security features that support the company's security controls. Licenses can be mixed, so office staff can receive Business Standard while factory workers who only need email and web apps can receive Business Basic.
 
-#### Public Website
+# Public Website
 
 The public website will be hosted by a managed website provider instead of on a server inside the company network. This means the firewall does not need to allow inbound internet traffic to an internal web server, which reduces the company's attack surface. The provider also handles web server updates, uptime, and SSL certificates.
 
@@ -249,7 +249,7 @@ The public website will be hosted by a managed website provider instead of on a 
 
 **Recommendation: Squarespace.** The company needs a professional informational website rather than an online store, and Squarespace's entry plan with a custom domain fully meets that need.
 
-#### Backup Storage
+# Backup Storage
 
 | Provider | Standard Storage Price | Notes |
 |---|---|---|
@@ -261,16 +261,16 @@ The public website will be hosted by a managed website provider instead of on a 
 
 **Recommendation: Backblaze B2.** It has the lowest standard storage price, works with most backup software through its S3-compatible API, and supports Object Lock, which prevents backups from being deleted or encrypted by ransomware for a set retention period. Glacier is cheaper to store but would be slow and costly to restore from during an emergency.
 
-### Complete cloud service pricing comparison
+# Complete cloud service pricing comparison
 
-#### Pricing Assumptions
+# Pricing Assumptions
 
 * Up to 65 users: 40 office staff and 25 factory workers (the maximum staff numbers in the requirements).
 * Office staff need desktop Office apps; factory workers need email and web apps only.
 * All prices are U.S. list prices on annual commitment, as of September–October 2026.
 * About 2 TB of engineering and financial files, stored as about 4 TB in the cloud once backup versions are included.
 
-#### Email and Productivity Costs
+# Email and Productivity Costs
 
 | Option | Office Users (40) | Factory Users (25) | Monthly Cost | Annual Cost |
 |---|---|---|---:|---:|
@@ -281,7 +281,7 @@ The public website will be hosted by a managed website provider instead of on a 
 
 Microsoft 365 and Google Workspace now have the same list prices, so the decision comes down to features. The Google Workspace Starter-only option is the cheapest, but office staff would not have desktop Office apps and would only have 30 GB of storage each.
 
-#### Website Costs
+# Website Costs
 
 | Option | Monthly Cost | Annual Cost |
 |---|---:|---:|
@@ -289,7 +289,7 @@ Microsoft 365 and Google Workspace now have the same list prices, so the decisio
 | Wix Light | $17 | $204 |
 | Wix Core | $29 | $348 |
 
-#### Backup Storage Costs (4 TB)
+# Backup Storage Costs (4 TB)
 
 | Provider | Monthly Cost | Annual Cost |
 |---|---:|---:|
@@ -299,7 +299,7 @@ Microsoft 365 and Google Workspace now have the same list prices, so the decisio
 | Amazon S3 Standard | About $92 | About $1,104 |
 | Amazon S3 Glacier | About $4–15 (plus retrieval fees) | About $48–173 (plus retrieval fees) |
 
-#### Recommended Cloud Services Total
+# Recommended Cloud Services Total
 
 | Service | Recommended Option | Estimated Annual Cost |
 |---|---|---:|
@@ -310,9 +310,9 @@ Microsoft 365 and Google Workspace now have the same list prices, so the decisio
 
 Prices change often, so they should be confirmed with each provider before purchase.
 
-### Compare backup strategies
+# Compare backup strategies
 
-#### Backup Types
+# Backup Types
 
 | Backup Type | How It Works | Advantages | Disadvantages |
 |---|---|---|---|
@@ -320,7 +320,7 @@ Prices change often, so they should be confirmed with each provider before purch
 | Incremental | Copies only data changed since the last backup of any type | Fastest backups, uses the least storage | Slower restore; needs the last full backup plus every incremental since |
 | Differential | Copies all data changed since the last full backup | Faster restore than incremental; needs only the full backup plus the latest differential | Each differential grows larger until the next full backup |
 
-#### Backup Locations
+# Backup Locations
 
 | Strategy | Advantages | Disadvantages |
 |---|---|---|
@@ -328,7 +328,7 @@ Prices change often, so they should be confirmed with each provider before purch
 | Cloud only | Stored offsite and protected from local disasters | Large restores are slow over the internet connection; ongoing monthly costs |
 | Hybrid (local + cloud) | Fast local restores plus offsite protection | Highest cost and complexity |
 
-#### Recommended Backup Strategy
+# Recommended Backup Strategy
 
 The company will follow the **3-2-1 backup rule**: keep 3 copies of important data, on 2 different types of storage, with 1 copy offsite.
 
@@ -347,7 +347,7 @@ Security camera footage is not fully backed up to the cloud because 24/7 video f
 
 Restores will be tested every three months to make sure the backups actually work. With nightly backups, the company would lose at most one day of file changes in a worst-case event.
 
-#### Additional Hardware and IP Address
+# Additional Hardware and IP Address
 
 | Hardware | Quantity | Minimum Specifications | Purpose |
 |---|---:|---|---|
@@ -357,7 +357,7 @@ Restores will be tested every three months to make sure the backups actually wor
 |---|---|---|---|
 | Backup NAS | 85.50.0.12 | Servers | Local backup storage |
 
-#### Sources
+# Sources
 
 * Microsoft 365 pricing: https://o365hq.com/blog/microsoft-365-business-basic-vs-standard-vs-premium-which-plan-for-10-50-and-200-users
 * Google Workspace pricing: https://www.flamingo.run/blog/google-workspace-pricing
