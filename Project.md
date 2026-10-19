@@ -79,5 +79,3 @@ We will aim to complete one or two tasks each week.
 
 - [X] Cloud provider research
 - [X] Pricing
-A firewall is positioned between the internet and the internal network. The core switch connects the different network segments and allows the network to be centrally connected.
-![Network Diagram](images/diagramproj.png)
