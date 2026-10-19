@@ -73,12 +73,12 @@ We will aim to complete one or two tasks each week.
 
 ### Week 8
 
-- [ ] Upload draft network design to GitHub
+- [X ] Upload draft network design to GitHub
 
 ### Week 9
 
-- [ ] Cloud provider research
-- [ ] Pricing
+- [X ] Cloud provider research
+- [ X] Pricing
 
 ---
 
