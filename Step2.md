@@ -1,6 +1,6 @@
-# Design the network
-Network Design
-IP Addressing
+# Design the Network
+## Network Design
+### IP Addressing
 The network will be divided into six separate /24 subnets. Network segmentation will separate factory equipment, office devices, security cameras, guest devices, servers, and network management traffic.
 
 Network	IP Address Range	Purpose
