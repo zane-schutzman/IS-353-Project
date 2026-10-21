@@ -35,3 +35,20 @@ All internal networks use a /24 subnet mask (255.255.255.0). The first octet of 
 | Guest Devices | 85.40.0.10–85.40.0.99 | Guest Wi-Fi | Temporary/guest devices |
 | File Server | 85.50.0.10 | Servers | Engineering and financial files |
 | Camera Server | 85.50.0.11 | Servers | Stores security camera footage |
+
+## Device IP Addresses
+
+| Device | IP Address | Network |
+|---|---|---|
+| Firewall | 85.10.0.1 | Network Gateway |
+| Core Switch | 85.60.0.1 | Management |
+| Factory Switch | 85.60.0.2 | Management |
+| Office Switch | 85.60.0.3 | Management |
+| Camera Switch | 85.60.0.4 | Management |
+| Server Switch | 85.60.0.5 | Management |
+| Factory PCs | 85.10.0.10–85.10.0.34 | Factory |
+| Office Computers | 85.20.0.10–85.20.0.49 | Office |
+| IP Cameras | 85.30.0.10–85.30.0.59 | Cameras |
+| Guest Devices | 85.40.0.10–85.40.0.99 | Guest |
+| File Server | 85.50.0.10 | Servers |
+| Camera Server | 85.50.0.11 | Servers |
