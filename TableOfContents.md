@@ -1,8 +1,8 @@
-# 
-## Cyber Security and Networks - IS*355*01
-**Owen Steinetz, **
+# Cyber Security and Networks - Final Project
+### Loyola University Maryland - IS.355.01
+Owen Steinetz, Charlie DiNapoli, Zane Schutzman, Gbemiro Omokayode
 
-### Table of Contents
+## Table of Contents
 
 [Step 1](./1_Identify_Assumptions_and_Requirements.md): Identify Assumptions and Requirements
 
