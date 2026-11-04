@@ -2,12 +2,12 @@
 
 ## Group Members
 
-| Student Name      | Student ID | Student Email                                           |
-| ----------------- | ---------: | ------------------------------------------------------- |
-| Zane Schutzman    |    1924285 | [zwschutzman@loyola.edu](mailto:zwschutzman@loyola.edu) |
-| Owen Steinetz     |    1928302 | [omsteinetz@loyola.edu](mailto:omsteinetz@loyola.edu)   |
-| Gbemiro Omokayode |    1904384 | [gdomokayode@loyola.edu](mailto:gdomokayode@loyola.edu) |
-| Charlie DiNapoli  |    1906216 | [cjdinapoli@loyola.edu](mailto:cjdinapoli@loyola.edu)   |
+| Student Name      | Student Email                                           |
+| ----------------- | ------------------------------------------------------- |
+| Zane Schutzman    | [zwschutzman@loyola.edu](mailto:zwschutzman@loyola.edu) |
+| Owen Steinetz     | [omsteinetz@loyola.edu](mailto:omsteinetz@loyola.edu)   |
+| Gbemiro Omokayode | [gdomokayode@loyola.edu](mailto:gdomokayode@loyola.edu) |
+| Charlie DiNapoli  | [cjdinapoli@loyola.edu](mailto:cjdinapoli@loyola.edu)   |
 
 ---
 
