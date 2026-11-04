@@ -7,3 +7,5 @@ The guest network provides wireless access for visitors without placing guest de
 
 A firewall is positioned between the internet and the internal network. The core switch connects the different network segments and allows the network to be centrally connected.
 ![Network Diagram](images/diagramproj.png)
+
+
