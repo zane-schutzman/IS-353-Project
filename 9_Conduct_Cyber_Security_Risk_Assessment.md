@@ -2,9 +2,8 @@
 
 To evaluate the security posture of the manufacturing facility network, a risk assessment was conducted focusing on key digital and physical assets, potential threat sources, vulnerabilities, and high-level risk ratings.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 1. Introduction
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 To evaluate the security posture of the manufacturing facility network, a risk assessment was conducted focusing on key digital and physical assets, potential threat sources, vulnerabilities, and high-level risk ratings.
 
 The purpose of this assessment is to identify potential cybersecurity risks that could affect the company's daily operations, compromise sensitive business information, or disrupt manufacturing activities. Particular attention is given to the network-connected factory machinery, office computers, local servers, IP security cameras, network infrastructure, and cloud services.
@@ -12,7 +11,7 @@ The purpose of this assessment is to identify potential cybersecurity risks that
 The assessment considers the company's network segmentation, which separates factory equipment, office devices, security cameras, guest Wi-Fi, local servers, and network management systems into different subnets.
 
 ## 2. Risk Assessment Methodology
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 A qualitative risk assessment approach was used to evaluate the potential risks associated with the company's network. Each risk was assessed based on two factors: likelihood and impact.
 
 - **Likelihood:** The probability that a particular threat will occur and exploit an existing vulnerability.
@@ -42,7 +41,7 @@ A numerical rating from 1 to 5 was assigned to both likelihood and impact. The o
 | 17–25 | Critical |
 
 ## 3. Identification and Classification of Assets
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The first stage of the assessment involved identifying important assets within the manufacturing company's network. These assets include physical equipment, network infrastructure, computer systems, and confidential company information.
 
 The following assets were identified:
@@ -59,7 +58,7 @@ The following assets were identified:
 | A8 | Cloud Services | External Cloud | Confidential / Public | Cloud-hosted website, email, and backup services used by the company. |
 
 ## 4. Identification of Threats and Vulnerabilities
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 After identifying the company's assets, potential threats and vulnerabilities were examined.
 
 A threat is a potential event or action that could cause harm to an asset. A vulnerability is a weakness in a system, device, or process that could be exploited by a threat.
@@ -78,7 +77,7 @@ The following threats and vulnerabilities were identified:
 | T8 | Cloud Services | Cloud account compromise or data breach | Weak authentication, exposed credentials, or improperly configured cloud storage. |
 
 ## 5. Risk Assessment and Evaluation
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The identified threats were evaluated according to their likelihood of occurring and the potential impact on the manufacturing company.
 
 The risk score for each threat was calculated using the likelihood and impact ratings.
@@ -95,41 +94,41 @@ The risk score for each threat was calculated using the likelihood and impact ra
 | R8 | Attackers compromise cloud accounts and gain access to company information or backups. | 3 | 5 | 15 | High |
 
 ## 6. Analysis of the Highest Risks
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The assessment identified two critical risks and five high risks. These risks require particular attention because of their potential impact on the company's manufacturing operations, confidential information, and overall network security.
 
 ### 6.1 Ransomware Attacks on Factory Machinery (Critical)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The factory relies on network-connected machinery, conveyor belts, and monitoring computers to maintain manufacturing operations. A ransomware attack targeting factory computers could prevent employees from monitoring or controlling machinery.
 
 This could result in manufacturing downtime, delayed production, financial losses, and potential damage to equipment or production processes.
 
 ### 6.2 Ransomware Attacks on the Local File Server (Critical)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The local file server stores important company information, including engineering designs and financial records. If ransomware successfully infects the server, these files could become encrypted and unavailable to employees.
 
 This could significantly disrupt business operations and potentially result in the loss of important company information if reliable backups are unavailable.
 
 ### 6.3 Theft of Engineering Designs (High)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Engineering designs and technical specifications represent valuable intellectual property for the manufacturing company. Unauthorized access to these files could allow attackers or competitors to obtain confidential product information.
 
 This could negatively affect the company's competitive advantage and result in financial losses.
 
 ### 6.4 Compromise of Network Infrastructure (High)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The company's firewall and switches are responsible for managing communication between the different network segments. If an attacker gains administrative access to this infrastructure, they could modify network configurations, bypass security restrictions, or gain access to other parts of the network.
 
 This could expose factory machinery, office computers, servers, and other connected devices to additional attacks.
 
 ### 6.5 Phishing and Malware Attacks (High)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Employees regularly use computers and email for communication and business activities. Attackers could exploit this by sending fraudulent emails containing malicious attachments or links.
 
 If an employee interacts with a malicious email, malware could infect their computer and potentially spread to other connected systems.
 
 ## 7. Overall Risk Assessment Findings
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The risk assessment identified ransomware, unauthorized network access, phishing attacks, and data theft as major cybersecurity concerns for the manufacturing company.
 
 The highest risks involve the factory machinery and local file server because these systems support essential business operations. A successful attack against either asset could cause significant operational disruption and financial losses.
