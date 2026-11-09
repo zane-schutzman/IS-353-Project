@@ -39,7 +39,7 @@ We will aim to complete one or two tasks each week.
 | Research cloud providers                        | Charlie | complete |
 | Complete cloud service pricing comparison       | Charlie | complete |
 | Compare backup strategies                       | Charlie | complete |
-| Conduct cyber security risk assessment          | Gbemiro | incomplete |
+| Conduct cyber security risk assessment          | Gbemiro | complete |
 | Recommend security controls                     | Owen | incomplete |
 | Review and improve network design               | Owen | incomplete |
 | Complete final report                           | Owen | incomplete |
