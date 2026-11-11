@@ -118,14 +118,14 @@ To address these risks, we have gone through and chosen 8 security controls that
 
 | Control ID | NIST SP 800-53 Control | Target Asset / Risk | Implementation Location / Mechanism |
 |---|---|---|---|
-| SC-1 |  |  |  |
-| SC-2 |  |  |  |
-| SC-3 |  |  |  |
-| SC-4 |  |  |  |
-| SC-5 |  |  |  |
-| SC-6 |  |  |  |
-| SC-7 |  |  |  |
-| SC-8 |  |  |  |
+| SC-1 | AC-3 (Access Enforcement) |  |  |
+| SC-2 | IA-2 (Identification and Authentication) |  |  |
+| SC-3 | SC-7 (Boundary Protection) |  |  |
+| SC-4 | CP-9 (System Backup) |  |  |
+| SC-5 | SI-3 (Malicious Code Protection) |  |  |
+| SC-6 | SI-4 (Information System Monitoring) |  |  |
+| SC-7 | CM-2 (Baseline Configuration |  |  |
+| SC-8 | SC-28 (Protection of Information at Rest) |  |  |
 
 
 ## 4. Updates to Network Design
