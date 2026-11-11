@@ -8,4 +8,5 @@ In Step 9, our risk assessment showed that our biggest concerns involve:
 - people stealing engineering designs and intellectual property
 - phishing emails sent to office staff (85.20.0.0/24)
 - someone gaining unauthorized control of network equipment (85.60.0.0/24)
+
 To address these risks, we have gone through and chosen 8 security controls that fit our network design.
