@@ -116,6 +116,18 @@ To address these risks, we have gone through and chosen 8 security controls that
 
 ## 3. Summary Table of Security Controls
 
+| Control ID | NIST SP 800-53 Control | Target Asset / Risk | Implementation Location / Mechanism |
+|---|---|---|---|
+| SC-1 |  |  |  |
+| SC-2 |  |  |  |
+| SC-3 |  |  |  |
+| SC-4 |  |  |  |
+| SC-5 |  |  |  |
+| SC-6 |  |  |  |
+| SC-7 |  |  |  |
+| SC-8 |  |  |  |
+
+
 ## 4. Updates to Network Design
 Adding these security controls helps keep our network organized in two main ways:
 - **Management Subnet (85.60.0.0/24)**
