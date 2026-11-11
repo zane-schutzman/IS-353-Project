@@ -16,7 +16,7 @@ To address these risks, we have gone through and chosen 8 security controls that
 #### Control 1: Access Enforcement and Least Privilege
 - **NIST SP 800-53 Control**: AC-3 (Access Enforcement)
 - **Best Practice Alignment**: ACSC Restrict Administrative Privileges and Access Control
-- **Protected Assets**:
+- **Protected Assets**: 
   - A4 (Local File Server)
   - A6 (Engineering Designs)
   - A7 (Financial Records)
