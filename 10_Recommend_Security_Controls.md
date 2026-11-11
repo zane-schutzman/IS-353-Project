@@ -63,7 +63,7 @@ To address these risks, we have gone through and chosen 8 security controls that
 - **Threats Addressed**:
   - T1 (Ransomware or Malware Attacks)
   - T4 (Ransomware and Data Loss)
-- **How it Works**: Based on our backup plan from Step 8, full weekly backups and nightly incremental backups will be saved to the Local Backup NAS. Backups will also be sent offsite to Backblaze B2 using Object Lock for 30 days. This keeps ransomware form deleting or encrypting our saved copies.
+- **How it Works**: Based on our backup plan from Step 8, full weekly backups and nightly incremental backups will be saved to the Local Backup NAS. Backups will also be sent offsite to Backblaze B2 using Object Lock for 30 days. This keeps ransomware from deleting or encrypting our saved copies.
 
 ### Control 5: Malicious Code Protection and Endpoint Protection
 - **NIST SP 800-53 Control**: SI-3 (Malicious Code Protection)
@@ -91,7 +91,7 @@ To address these risks, we have gone through and chosen 8 security controls that
 - **How it Works**: Network switches, the main firewall, and local servers will send log data to a server on the management network. System alerts will notify administrators about unusual network activity, multiple failed login attempts, or unexpected settings changes.
 
 ### Control 7: Secure Baseline Configuration
-- **NIST SP 800-53 Control**: CM-2 (Baseline Configuration
+- **NIST SP 800-53 Control**: CM-2 (Baseline Configuration)
 - **Best Practice Alignment**: ACSC Hardening Guidance and NIST Cybersecurity Framework (Protect)
 - **Protected Assets**: 
   - A3 (Security Cameras)
