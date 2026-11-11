@@ -118,14 +118,14 @@ To address these risks, we have gone through and chosen 8 security controls that
 
 | Control ID | NIST SP 800-53 Control | Target Asset / Risk | Implementation Location / Mechanism |
 |---|---|---|---|
-| SC-1 | AC-3 (Access Enforcement) |  |  |
-| SC-2 | IA-2 (Identification and Authentication) |  |  |
-| SC-3 | SC-7 (Boundary Protection) |  |  |
-| SC-4 | CP-9 (System Backup) |  |  |
-| SC-5 | SI-3 (Malicious Code Protection) |  |  |
-| SC-6 | SI-4 (Information System Monitoring) |  |  |
-| SC-7 | CM-2 (Baseline Configuration |  |  |
-| SC-8 | SC-28 (Protection of Information at Rest) |  |  |
+| SC-1 | AC-3 (Access Enforcement) | Local File Server and Engineering Data (R2, R3, R6) | Office and Server Subnets (85.20.0.0/24, 85.50.0.0/24) |
+| SC-2 | IA-2 (Identification and Authentication) | Office PCs, Network Equipment, Cloud (R5, R7, R8) | Microsoft 365, VPN Gateways, Management Subnet |
+| SC-3 | SC-7 (Boundary Protection) | Factory Machinery and Internal Network (R1, R6) | Enterprise Firewall and Inter-VLAN rules |
+| SC-4 | CP-9 (System Backup) | Local File Server Data (R1, R5) | Local Backup NAS (85.50.0.12) and Backblaze B2 |
+| SC-5 | SI-3 (Malicious Code Protection) | Factory PCs and Office Workstations (R1, R7) | Endpoints and Servers via Anti-Malware Software |
+| SC-6 | SI-4 (Information System Monitoring) | Network Infrastructure and Cameras (R3, R4, R6) | Logging Server on Management Subnet (85.60.0.0/24) |
+| SC-7 | CM-2 (Baseline Configuration | Switches, Firewalls, and IP Cameras (R3, R5) | Hardened Device Settings and Updated Passwords |
+| SC-8 | SC-28 (Protection of Information at Rest) | File Server and Cloud Backups (R2, R8) | Disk Encryption and Encrypted Backup Files |
 
 
 ## 4. Updates to Network Design
