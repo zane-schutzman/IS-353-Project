@@ -14,9 +14,16 @@ To address these risks, we have gone through and chosen 8 security controls that
 
 ## 2. Our Recommendations
 #### Control 1: Access Enforcement and Least Privilege
-- **NIST SP 800-53 Control**: 
-- **Best Practice Alignment**: 
-- **Target Asset and Threat**: 
+- **NIST SP 800-53 Control**: AC-3 (Access Enforcement)
+- **Best Practice Alignment**: ACSC Restrict Administrative Privileges and Access Control
+- **Protected Assets**:
+  - A4 (Local File Server)
+  - A6 (Engineering Designs)
+  - A7 (Financial Records)
+- **Threats Addressed**:
+  - T4 (Ransomware and Data Loss)
+  - T6 (Data Theft or Unauthorized Disclosure)
+  - T7 (Un)
 - **How it Works**: 
 
 #### Control 2: Multi-Factor Authentication (MFA)
