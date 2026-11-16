@@ -6,6 +6,6 @@ The factory network contains the company's network-controlled machinery, conveyo
 The guest network provides wireless access for visitors without placing guest devices directly on the company's internal networks. The server network contains the local file and camera servers. A separate management network is used for managing network infrastructure.
 
 A firewall is positioned between the internet and the internal network. The core switch connects the different network segments and allows the network to be centrally connected.
-![Network Diagram](images/diagramproj.png)
+![Network Diagram](images/NetworkDiagramV2.txt)
 
 
