@@ -45,4 +45,4 @@ Microsoft 365 and Google Workspace now have the same list prices, so the decisio
 | Backup storage | Backblaze B2 (4 TB) | About $334 |
 | **Total** | | **About $9,382 per year** |
 
-Prices change often, so they should be confirmed with each provider before purchase._
+Prices change often, so they should be confirmed with each provider before purchase.
